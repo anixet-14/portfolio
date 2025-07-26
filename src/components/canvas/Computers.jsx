@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 // === 3D Model Component ===
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./office_worker_2_animated_gltf/scene.gltf");
+  const computer = useGLTF(`${import.meta.env.BASE_URL}office_worker_2_animated_gltf/scene.gltf`);
 
   return (
     <mesh>
