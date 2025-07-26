@@ -27,10 +27,11 @@ const Computers = ({ isMobile }) => {
       {/* 3D Model */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.4 : 1.5}
-        position={isMobile ? [0, -1.8, 0] : [0, -2.2, 0]}
+        scale={isMobile ? 0.5 : 0.8} // smaller scale
+        position={isMobile ? [0, -1.2, -1] : [0, -1.5, -1]} // move up slightly
         rotation={[0, 0.4, 0]}
       />
+
     </mesh>
   );
 };
@@ -56,12 +57,10 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{
-        position: isMobile ? [2, 1, 5] : [5, 2, 10],
-        fov: isMobile ? 40 : 35,
-      }}
+      camera={{ position: [10, 2, 15], fov: 35 }} // moved back for better view
       gl={{ preserveDrawingBuffer: true }}
     >
+
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
         <Computers isMobile={isMobile} />
