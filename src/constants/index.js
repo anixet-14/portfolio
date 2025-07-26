@@ -23,6 +23,19 @@ import {
   jobit,
   tripguide,
   threejs,
+  sde,
+  ramaiah,
+  express,
+  python,
+  cpp,
+  golang,
+  mysql,
+  azure, 
+  linux,
+  windows,
+  mern,
+  systemmonitor,
+  medisage,
 } from "../assets";
 
 export const navLinks = [
@@ -42,31 +55,28 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Machine Learning Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Engineer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Software Engineer",
+    icon: sde,
   },
 ];
 
+
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "MERN",
+    icon: mern,
   },
   {
     name: "JavaScript",
@@ -77,96 +87,96 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Python",
+    icon: python, // 📝 Add a Python icon to your assets if not present
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "C++",
+    icon: cpp, // 📝 Custom icon may be needed for C++
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Go",
+    icon: golang, // 📝 Add Go icon if available
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "MySQL",
+    icon: mysql, // 📝 Add MySQL icon if not already in your assets
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Azure",
+    icon: azure, // 📝 You may need to add Azure logo in your assets
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Linux",
+    icon: linux, // 📝 Add a Linux Tux icon if not already included
+  },
+  {
+    name: "Windows",
+    icon: windows, // 📝 Add a Linux Tux icon if not already included
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+  title: "Web Development Intern",
+  company_name: "M.S. Ramaiah Institute of Technology",
+  icon: ramaiah,
+  iconBg: "#383E56",
+  date: "Sept 2023 – Oct 2023",
+  points: [
+    "Built dynamic UI components using React.js and JavaScript to enhance user engagement.",
+    "Optimized application performance through lazy loading and efficient state management.",
+    "Collaborated in Agile sprints, contributing to planning, daily standups, and code reviews.",
+  ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
+  // {
+  //   title: "React Native Developer",
+  //   company_name: "Tesla",
+  //   icon: tesla,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2021 - Feb 2022",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const testimonials = [
@@ -198,68 +208,91 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "MediSage",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A multimodal health diagnosis system that leverages audio, visual, and textual inputs using LLMs and Gradio to simulate a virtual doctor for early medical insights.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "gradio",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "llm",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: medisage, // Make sure this is your imported image reference
+    source_code_link: "https://github.com/anixet-14/MediSage/",
   },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+
+  // {
+  //   name: "Job IT",
+  //   description:
+  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "restapi",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "scss",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: jobit,
+  //   source_code_link: "https://github.com/",
+  // },
+  // {
+  //   name: "Trip Guide",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/",
+  // },
+    {
+  name: "System Health Monitor",
+  description:
+    "A Python-based monitoring tool that tracks CPU, memory, and disk usage in real-time, and sends alerts via email and Slack when system resources exceed defined thresholds.",
+  tags: [
+    {
+      name: "python",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "psutil",
+      color: "green-text-gradient",
+    },
+    {
+      name: "slack-api",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: systemmonitor, // replace with your imported image variable
+  source_code_link: "https://github.com/anixet-14/System-Health-Monitor-System/",
+}
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
