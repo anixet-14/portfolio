@@ -8,11 +8,6 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./office_worker_2_animated_gltf/scene.gltf");
 
-  // Optional: Log model structure once to debug
-  useEffect(() => {
-    console.log("Loaded Model:", computer);
-  }, [computer]);
-
   return (
     <mesh>
       {/* Lighting */}
@@ -29,14 +24,13 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1.2} />
 
-      {/* Model */}
+      {/* 3D Model */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.6 : 1.2} // ⬅️ reduced from 5 to reasonable size
-        position={isMobile ? [0, -2, -1.5] : [0, -1.8, -1.5]} // ⬇️ shift slightly down
+        scale={isMobile ? 1 : 1.5}
+        position={isMobile ? [0, -1.8, 0] : [0, -2.2, 0]}
         rotation={[0, 0.4, 0]}
       />
-
     </mesh>
   );
 };
@@ -46,9 +40,13 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsMobile(mediaQuery.matches);
-    const handleMediaQueryChange = (event) => setIsMobile(event.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
     mediaQuery.addEventListener("change", handleMediaQueryChange);
     return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
@@ -58,7 +56,10 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [5, 2, 10], fov: 35 }} // 🔍 Wider view
+      camera={{
+        position: isMobile ? [2, 1, 5] : [5, 2, 10],
+        fov: isMobile ? 40 : 35,
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
