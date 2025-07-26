@@ -9,7 +9,8 @@ import {
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
-import { technologies } from "../constants";
+import { technologies } from "../../constants";
+
 
 // === Ball Component ===
 const Ball = ({ icon, position }) => {
