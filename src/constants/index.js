@@ -36,6 +36,7 @@ import {
   mern,
   systemmonitor,
   medisage,
+  aci,
 } from "../assets";
 
 export const navLinks = [
@@ -137,6 +138,19 @@ const experiences = [
     "Collaborated in Agile sprints, contributing to planning, daily standups, and code reviews.",
   ],
   },
+  {
+  title: "Software Engineering Intern",
+  company_name: "ACI Worldwide",
+  icon: aci,
+  iconBg: "#FFFFFF",
+  date: "Jan 2026 – Jul 2026",
+  points: [
+    "Investigated and debugged defects across 10+ enterprise payment applications built on Java and SQL.",
+    "Fixed and validated 50+ defects involving backend logic, REST APIs, and SQL queries, improving release stability.",
+    "Maintained a 100% regression success rate by creating test fixtures, analyzing logs, and collaborating with QA engineers.",
+    "Worked with Git, Jenkins, Maven, Linux, and Agile development practices to accelerate debugging and testing workflows.",
+  ],
+},
 
   // {
   //   title: "React Native Developer",

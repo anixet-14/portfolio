@@ -44,6 +44,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import systemmonitor from "./systemmonitor.png";
 import medisage from "./medisage.png";
+import aci from "./company/aci.png";
 
 export {
   logo,
@@ -87,4 +88,5 @@ export {
   mern,
   systemmonitor,
   medisage,
+  aci,
 };
